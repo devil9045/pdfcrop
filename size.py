@@ -11,3 +11,4 @@ for num in range(pdf_num):
         page = reader.getPage(i)
         orientation = page.cropBox.getUpperRight()
         print(f"{i+1}-->{orientation}")
+    print("")
