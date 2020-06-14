@@ -15,11 +15,7 @@ def all(left, right, lower, upper):
 
     for num in range(num_pdf):
         pdf_reader = PdfFileReader(f'{pdf_name[num]}', 'r')
-        lower = float(input("ENTER INCHES YOU WANT TO CUT FROM LOWER SIDE: "))
-        right = float(input("ENTER INCHES YOU WANT TO CUT FROM RIGHT SIDE: "))
-        upper = float(input("ENTER INCHES YOU WANT TO CUT FROM UPPER SIDE: "))
-        left = float(input("ENTER INCHES YOU WANT TO CUT FROM LEFT SIDE: "))
-
+        
         left *= 72
         right *= 72
         lower *= 72
